@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div id="background"> 
+    <video loop autoplay muted> 
+      <source src="assets/Spider-Man_ Across the Spider-Verse _ Official Clip _ _Gwen and Miles_.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <audio id="musica-fundo" autoplay loop>
+  <source src="assets/d4vd - Feel It.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+
+
+ <div class="conteudo show" id="start">
+
+    <h1>Oi, meu amor ❤️</h1>
+    <p>Tenho uma coisinha pra te dizer...</p>
+    <button onclick="comecar()">Clique aqui</button>
+  </div>
+
+  <div class="conteudo" id="pergunta">
+    <h1>Você sabe o quanto eu te amo?</h1>
+    <div id="opcoes">
+      <button onclick="responder('sim')">Sim!</button>
+      <button onclick="responder('muito')">Muito!</button>
+      <button onclick="responder('nao')">Não 😢</button>
+    </div>
+  </div>
+
+  <div class="conteudo" id="final">
+    <h2>Eu te amo mais do que você imagina 💖</h2>
+    <p>Você é minha paz, meu riso, 
+   eu te amo em todos os universos possiveis, e vou te esperar em todos eles, 
+   saiba disso. nosso Amor cazuziano? aaa...intenso! igual seu perfume 
+   laranja ultraforte, que me faz querer te sentir mais e mais. obrigada por fazer meus dias melhores, eu queria estar com vc em todos eles e não te soltar mais. te vivo! </p>
+    <button onclick="mostrarCarrossel()"> eu i vc 📸</button>
+  </div>
+
+  <div class="conteudo" id="carrossel">
+    <h2>te amo 💞</h2>
+    <div class="slider">
+      <img src="assets/WhatsApp Image 2025-07-13 at 22.00.09.jpeg" class="slide active">
+      <img src="assets/im1.png" class="slide">
+      <img src="assets/foto3.jpg" class="slide">
+    </div>
+    <div class="botoes">
+      <button onclick="mudarSlide(-1)">⬅️</button>
+      <button onclick="mudarSlide(1)">➡️</button>
+    </div>
+    <p>Com amor, Bel 💌</p>
+  </div>
+
+  <script src="k.js"></script>
+</body>
+</html>
+
