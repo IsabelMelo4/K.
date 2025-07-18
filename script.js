@@ -38,3 +38,10 @@ function mudarSlide(direcao) {
   slideAtual = (slideAtual + direcao + slides.length) % slides.length;
   slides[slideAtual].classList.add('active');
 }
+
+window.addEventListener('load', () => {
+  const musica = document.getElementById('musica');
+  musica.play().catch(e => {
+    console.log("Autoplay bloqueado, clique para iniciar.");
+  });
+});
